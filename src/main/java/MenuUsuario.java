@@ -1,0 +1,2 @@
+public class MenuUsuario {
+}
