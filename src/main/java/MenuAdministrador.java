@@ -13,7 +13,6 @@ public class MenuAdministrador {
     }
 
     public void mostrarMenu() {
-        poblarZapatillas();
         String opcion = null;
 
         do {

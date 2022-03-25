@@ -71,6 +71,4 @@ public class MenuUsuario {
             catalogoZapatillas.add(new Zapatilla("Air Jordan","negro y rojo", 46, 112.00f));
             catalogoZapatillas.add(new Zapatilla("New Balance Running","amarillo", 39, 59.90f));
         }
-
-
 }

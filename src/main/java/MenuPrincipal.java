@@ -4,21 +4,21 @@ import java.util.Scanner;
 
 public class MenuPrincipal {
     private Scanner teclado;
-    private List<Zapatilla> catalogoZapatillas;
     private List<Usuario> usuarioList;
     private List<UsuarioAdministrador> usuariosAdministradorList;
+    public List<Zapatilla> catalogoZapatillas;
 
     public MenuPrincipal() {
         teclado = new Scanner(System.in);
-        catalogoZapatillas = new ArrayList<>();
         usuarioList = new ArrayList<>();
         usuariosAdministradorList = new ArrayList<>();
+        catalogoZapatillas = new ArrayList<>();
     }
 
     public void mostrarMenu() {
-        poblarZapatillas();
         poblarUsuarios();
         poblarUsuariosAdministradores();
+        poblarZapatillas();
         String opcion = null;
 
         do {
@@ -49,14 +49,6 @@ public class MenuPrincipal {
         menuAdministrador.mostrarMenu();
     }
 
-    public void poblarZapatillas() {
-        catalogoZapatillas.add(new Zapatilla("Adidas clasic","blanco", 42, 49.90f));
-        catalogoZapatillas.add(new Zapatilla("Nike fire","rojo", 37, 35.90f));
-        catalogoZapatillas.add(new Zapatilla("Convers alta","blanco, azul y rojo", 44, 79.90f));
-        catalogoZapatillas.add(new Zapatilla("Air Jordan","negro y rojo", 46, 112.00f));
-        catalogoZapatillas.add(new Zapatilla("New Balance Running","amarillo", 39, 59.90f));
-    }
-
     public void poblarUsuarios() {
         usuarioList.add(new Usuario("Pepe99","1234", "Pepe", "Perez", "12456789H", 976123123));
         usuarioList.add(new Usuario("Pepe98","1234", "Pepe", "Sanchez", "12456701H", 976123124));
@@ -65,6 +57,14 @@ public class MenuPrincipal {
 
     public void poblarUsuariosAdministradores() {
         usuariosAdministradorList.add(new UsuarioAdministrador("Admin","Admin", "Bruce", "Springsteen", "00000001B", 976252100, 1, true));
+    }
+
+    public void poblarZapatillas() {
+        catalogoZapatillas.add(new Zapatilla("Adidas clasic","blanco", 42, 49.90f));
+        catalogoZapatillas.add(new Zapatilla("Nike fire","rojo", 37, 35.90f));
+        catalogoZapatillas.add(new Zapatilla("Convers alta","blanco, azul y rojo", 44, 79.90f));
+        catalogoZapatillas.add(new Zapatilla("Air Jordan","negro y rojo", 46, 112.00f));
+        catalogoZapatillas.add(new Zapatilla("New Balance Running","amarillo", 39, 59.90f));
     }
 }
 
