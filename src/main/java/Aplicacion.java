@@ -1,6 +1,6 @@
 public class Aplicacion {
     public static void main(String[] args){
-        MenuAdministrador menuAdministrador = new MenuAdministrador();
-        menuAdministrador.mostrarMenu();
+        MenuPrincipal menuPrincipal = new MenuPrincipal();
+        menuPrincipal.mostrarMenu();
     }
 }
