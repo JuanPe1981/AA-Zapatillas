@@ -1,15 +1,28 @@
+import java.util.List;
+import java.util.Scanner;
+
 public class Zapatilla {
 
     private String nombre;
     private String color;
     private int numero;
-    private float precio;
+    private double precio;
 
-    public Zapatilla(String nombre, String color, int numero, float precio){
-        this.nombre = nombre;
-        this.color = color;
-        this.numero = numero;
-        this.precio = precio;
+    private Scanner teclado;
+    private List<Zapatilla> catalogoZapatillas;
+
+
+    public Zapatilla(String nombre, String color, int numero, double precio){
+        if (precio > 0 && numero > 0){
+            this.nombre = nombre;
+            this.color = color;
+            this.numero = numero;
+            this.precio = precio;
+        } else
+        System.out.println("El precio y el numero de calzado no puede ser 0");
+    }
+
+    public Zapatilla() {
     }
 
     public String getNombre() {
@@ -36,11 +49,12 @@ public class Zapatilla {
         this.numero = numero;
     }
 
-    public float getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(float precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
+
 }

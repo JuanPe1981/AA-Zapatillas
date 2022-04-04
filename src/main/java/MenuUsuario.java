@@ -65,10 +65,10 @@ public class MenuUsuario {
         }
 
         public void poblarZapatillas(){
-            catalogoZapatillas.add(new Zapatilla("Adidas clasic","blanco", 42, 49.90f));
-            catalogoZapatillas.add(new Zapatilla("Nike fire","rojo", 37, 35.90f));
-            catalogoZapatillas.add(new Zapatilla("Convers alta","blanco, azul y rojo", 44, 79.90f));
-            catalogoZapatillas.add(new Zapatilla("Air Jordan","negro y rojo", 46, 112.00f));
-            catalogoZapatillas.add(new Zapatilla("New Balance Running","amarillo", 39, 59.90f));
+            catalogoZapatillas.add(new Zapatilla("Adidas clasic","blanco", 42, 49.90));
+            catalogoZapatillas.add(new Zapatilla("Nike fire","rojo", 37, 35.90));
+            catalogoZapatillas.add(new Zapatilla("Convers alta","blanco, azul y rojo", 44, 79.90));
+            catalogoZapatillas.add(new Zapatilla("Air Jordan","negro y rojo", 46, 112.00));
+            catalogoZapatillas.add(new Zapatilla("New Balance Running","amarillo", 39, 59.90));
         }
 }
