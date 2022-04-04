@@ -13,6 +13,7 @@ public class MenuAdministrador {
     }
 
     public void mostrarMenu() {
+        poblarZapatillas();
         String opcion = null;
 
         do {
@@ -54,7 +55,7 @@ public class MenuAdministrador {
         System.out.print("Número: ");
         int numero = Integer.parseInt(teclado.nextLine());
         System.out.print("Precio: ");
-        float precio = Float.parseFloat(teclado.nextLine());
+        double precio = Double.parseDouble(teclado.nextLine());
         Zapatilla zapatilla = new Zapatilla(nombre.trim(), color.trim(), numero, precio);
         catalogoZapatillas.add(zapatilla);
     }
@@ -102,7 +103,7 @@ public class MenuAdministrador {
                 System.out.println("Nuevo número: ");
                 int nuevoNumero = Integer.parseInt(teclado.nextLine());
                 System.out.println("Nuevo precio: ");
-                float nuevoPrecio = Float.parseFloat(teclado.nextLine());
+                double nuevoPrecio = Double.parseDouble(teclado.nextLine());
                 zapatilla.setNombre(nuevoNombre);
                 zapatilla.setColor(nuevoColor);
                 zapatilla.setNumero(nuevoNumero);
@@ -125,14 +126,12 @@ public class MenuAdministrador {
         }
     }
 
-
-
-    public void poblarZapatillas() {
-        catalogoZapatillas.add(new Zapatilla("Adidas clasic","blanco", 42, 49.90f));
-        catalogoZapatillas.add(new Zapatilla("Nike fire","rojo", 37, 35.90f));
-        catalogoZapatillas.add(new Zapatilla("Convers alta","blanco, azul y rojo", 44, 79.90f));
-        catalogoZapatillas.add(new Zapatilla("Air Jordan","negro y rojo", 46, 112.00f));
-        catalogoZapatillas.add(new Zapatilla("New Balance Running","amarillo", 39, 59.90f));
+    public void poblarZapatillas(){
+        catalogoZapatillas.add(new Zapatilla("Adidas clasic","blanco", 42, 49.90));
+        catalogoZapatillas.add(new Zapatilla("Nike fire","rojo", 37, 35.90));
+        catalogoZapatillas.add(new Zapatilla("Convers alta","blanco, azul y rojo", 44, 79.90));
+        catalogoZapatillas.add(new Zapatilla("Air Jordan","negro y rojo", 46, 112.00));
+        catalogoZapatillas.add(new Zapatilla("New Balance Running","amarillo", 39, 59.90));
     }
 
 
