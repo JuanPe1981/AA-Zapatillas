@@ -1,15 +1,18 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class MenuAdministrador {
 
     private Scanner teclado;
     private List<Zapatilla> catalogoZapatillas;
+    private List<Usuario> usuarios;
 
     public MenuAdministrador() {
         teclado = new Scanner(System.in);
         catalogoZapatillas = new ArrayList<>();
+        usuarios = new ArrayList<>();
     }
 
     public void mostrarMenu() {
@@ -43,6 +46,8 @@ public class MenuAdministrador {
                 case "5":
                     verCatalogo();
                     break;
+                case "6":
+                    añadirUsuario();
             }
         } while (!opcion.equals("6"));
     }
@@ -124,6 +129,23 @@ public class MenuAdministrador {
             System.out.println("Precio: " + zapatilla.getPrecio());
             System.out.println();
         }
+    }
+
+    public void añadirUsuario() {
+        System.out.print("Nombre de usuario: ");
+        String nombreUsuario = teclado.nextLine();
+        System.out.print("Contraseña: ");
+        String contraseña = teclado.nextLine();
+        System.out.print("Nombre: ");
+        String nombre = teclado.nextLine();
+        System.out.print("Apellidos: ");
+        String apellidos = teclado.nextLine();
+        System.out.print("DNI: ");
+        String dni = teclado.nextLine();
+        System.out.print("Teléfono: ");
+        String telefono = teclado.nextLine();
+        Usuario usuario = new Usuario(nombreUsuario.trim(), contraseña.trim(), nombre.trim(), apellidos.trim(), dni.trim(), telefono.trim());
+        usuarios.add(usuario);
     }
 
     public void poblarZapatillas(){

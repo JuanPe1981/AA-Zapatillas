@@ -5,9 +5,9 @@ public class Usuario {
     private String nombre;
     private String apellido;
     private String dni;
-    private int telefono;
+    private String telefono;
 
-    public Usuario(String usuario, String contraseña, String nombre, String apellido, String dni, int telefono) {
+    public Usuario(String usuario, String contraseña, String nombre, String apellido, String dni, String telefono) {
         this.usuario = usuario;
         this.contraseña = contraseña;
         this.nombre = nombre;
@@ -56,11 +56,11 @@ public class Usuario {
         this.dni = dni;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 }
