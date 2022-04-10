@@ -26,7 +26,8 @@ public class MenuAdministrador {
             System.out.println("3. Buscar Zapatilla");
             System.out.println("4. Modificar Zapatilla");
             System.out.println("5. Ver catalogo");
-            System.out.println("6. Salir");
+            System.out.println("6. Añadir usuario");
+            System.out.println("7. Salir");
             System.out.println("Opción: ");
             opcion = teclado.nextLine();
 
@@ -49,7 +50,7 @@ public class MenuAdministrador {
                 case "6":
                     añadirUsuario();
             }
-        } while (!opcion.equals("6"));
+        } while (!opcion.equals("7"));
     }
 
     public void anadirZapatilla() {
@@ -143,8 +144,8 @@ public class MenuAdministrador {
         System.out.print("DNI: ");
         String dni = teclado.nextLine();
         System.out.print("Teléfono: ");
-        String telefono = teclado.nextLine();
-        Usuario usuario = new Usuario(nombreUsuario.trim(), contraseña.trim(), nombre.trim(), apellidos.trim(), dni.trim(), telefono.trim());
+        int telefono = Integer.parseInt(teclado.nextLine());
+        Usuario usuario = new Usuario(nombreUsuario.trim(), contraseña.trim(), nombre.trim(), apellidos.trim(), dni.trim(), telefono);
         usuarios.add(usuario);
     }
 

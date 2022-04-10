@@ -50,13 +50,13 @@ public class MenuPrincipal {
     }
 
     public void poblarUsuarios() {
-        usuarioList.add(new Usuario("Pepe99","1234", "Pepe", "Perez", "12456789H", "976123123"));
-        usuarioList.add(new Usuario("Pepe98","1234", "Pepe", "Sanchez", "12456701H", "976123124"));
-        usuarioList.add(new Usuario("Pepe90","1234", "Pepe", "Lopez", "12456702H", "976123125"));
+        usuarioList.add(new Usuario("Pepe99","1234", "Pepe", "Perez", "12456789H", 976123123));
+        usuarioList.add(new Usuario("Pepe98","1234", "Pepe", "Sanchez", "12456701H", 976123124));
+        usuarioList.add(new Usuario("Pepe90","1234", "Pepe", "Lopez", "12456702H", 976123125));
     }
 
     public void poblarUsuariosAdministradores() {
-        usuariosAdministradorList.add(new UsuarioAdministrador("Admin","Admin", "Bruce", "Springsteen", "00000001B", "976252100", 1, true));
+        usuariosAdministradorList.add(new UsuarioAdministrador("Admin","Admin", "Bruce", "Springsteen", "00000001B", 976252100, 1, true));
     }
 
     public void poblarZapatillas() {

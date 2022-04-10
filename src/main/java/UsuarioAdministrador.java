@@ -3,7 +3,7 @@ public class UsuarioAdministrador extends Usuario {
     private int numeroEmpleado;
     private boolean trabajadorActivo;
 
-    public UsuarioAdministrador(String usuario, String contraseña, String nombre, String apellido, String dni, String telefono, int numeroEmpleado, boolean trabajadorActivo){
+    public UsuarioAdministrador(String usuario, String contraseña, String nombre, String apellido, String dni, int telefono, int numeroEmpleado, boolean trabajadorActivo){
         super (usuario, contraseña, nombre, apellido, dni, telefono);
         this.numeroEmpleado = numeroEmpleado;
         this.trabajadorActivo = trabajadorActivo;
