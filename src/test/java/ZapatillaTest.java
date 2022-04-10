@@ -33,6 +33,5 @@ public class ZapatillaTest {
         Zapatilla zapatilla = new Zapatilla("Nike", "Rojo", 44, 49.99);
         double precio = zapatilla.getPrecio();
         assertEquals(49.99, precio);
-        assertSame(49.99, precio);
     }
 }
