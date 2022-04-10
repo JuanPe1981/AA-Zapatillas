@@ -55,7 +55,7 @@ public class MenuAdministrador {
         System.out.print("Número: ");
         int numero = Integer.parseInt(teclado.nextLine());
         System.out.print("Precio: ");
-        double precio = Double.parseDouble(teclado.nextLine());
+        float precio = Float.parseFloat(teclado.nextLine());
         Zapatilla zapatilla = new Zapatilla(nombre.trim(), color.trim(), numero, precio);
         catalogoZapatillas.add(zapatilla);
     }
